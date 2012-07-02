@@ -1,3 +1,4 @@
+alias ls="ls -G" # Color listing
 alias ll="ls -l"
 
 # Git
@@ -10,3 +11,4 @@ alias gc="git commit"
 alias gcm="git commit -m"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias glg="git log"
