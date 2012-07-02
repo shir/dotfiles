@@ -9,7 +9,7 @@ It has configuration for:
 * Useful bash aliases for git and unix commands
 * Setup for RVM environment
 * Setup for [bundler-exec](https://github.com/gma/bundler-exec)
-  (includes as submodule)
+  (included as submodule)
 * Screen utility
 * Gem
 * Capistrano
