@@ -29,11 +29,11 @@ if $color_is_on; then
     # set user color
     case `id -u` in
         0) color_user=$color_red ;;
-        *) color_user=$color_blue ;;
+        *) color_user=$color_green ;;
     esac
 fi
 
-PS1="${color_user}\u${color_off}@${color_yellow}\h${color_off}:${color_white} \W${color_off}\n\$ "
+PS1="${color_blue}[\t]${color_off} ${color_user}\u${color_off}@${color_yellow}\h${color_off}:${color_white} \W/${color_off}\n\$ "
 
 # User's .bin directory
 export PATH="${PATH}:${HOME}/.bin"
