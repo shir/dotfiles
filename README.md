@@ -1,6 +1,9 @@
+Description
+===========
 Configuration files for Bash.
 
-= Installation
+Installation
+============
     cd ~/
     git clone https://github.com/shir/dotfiles.git .dotfiles
     ln -s .dotfiles/.bashrc
