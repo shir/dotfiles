@@ -59,3 +59,4 @@ fi
 # Bundler exec
 BUNDLER_EXEC="$(dirname $(readlink ${BASH_SOURCE[0]}))/bundler-exec/bundler-exec.sh"
 [ -f "${BUNDLER_EXEC}" ] && source "${BUNDLER_EXEC}"
+
