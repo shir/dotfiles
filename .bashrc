@@ -1,3 +1,12 @@
+# Homebrew
+export PATH="${PATH}:/usr/local/sbin"
+
+# Use bash-completion
+# You can install it with brew
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  source `brew --prefix`/etc/bash_completion
+fi
+
 if [ -f ~/.bash_aliases ]; then
  source ~/.bash_aliases
 fi
@@ -33,15 +42,17 @@ if $color_is_on; then
     esac
 fi
 
-PS1="${color_blue}[\t]${color_off} ${color_user}\u${color_off}@${color_yellow}\h${color_off}:${color_white} \W/${color_off}\n\$ "
+GIT_PS='$(__git_ps1 " (%s) ")'
+PS1="${color_blue}[\t]${color_off} ${color_user}\u${color_off}@${color_yellow}\h${color_off}:${color_white}\w/${color_off}${color_red}${GIT_PS}${color_off}\n${color_red}\$${color_off} "
 
 # User's .bin directory
-export PATH="${PATH}:${HOME}/.bin"
-
-# Homebrew
-export PATH="${PATH}:/usr/local/sbin"
+if [ -d ~/.bin ]; then
+  export PATH="${PATH}:${HOME}/.bin"
+fi
 
 # RVM
-export PATH="${PATH}:${HOME}/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+if [ -d ~/.rvm ]; then
+  export PATH="${PATH}:${HOME}/.rvm/bin" # Add RVM to PATH for scripting
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+fi
 
