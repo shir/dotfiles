@@ -35,6 +35,9 @@ fi
 
 PS1="${color_user}\u${color_off}@${color_yellow}\h${color_off}:${color_white} \W${color_off}\n\$ "
 
+# User's .bin directory
+export PATH="${PATH}:${HOME}/.bin"
+
 # Homebrew
 export PATH="${PATH}:/usr/local/sbin"
 
