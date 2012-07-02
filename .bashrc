@@ -57,6 +57,6 @@ if [ -d ~/.rvm ]; then
 fi
 
 # Bundler exec
-BUNDLER_EXEC="$(dirname $(readlink ${BASH_SOURCE[0]}))/bundler-exec/bundler-exec.sh"
+BUNDLER_EXEC="${HOME}/$(dirname $(readlink ${BASH_SOURCE[0]}))/bundler-exec/bundler-exec.sh"
 [ -f "${BUNDLER_EXEC}" ] && source "${BUNDLER_EXEC}"
 
