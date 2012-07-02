@@ -1,5 +1,8 @@
+# Useful unix commands
 alias ls="ls -G" # Color listing
 alias ll="ls -l"
+alias g="grep --color=autor -n"
+alias gr="g -R"
 
 # Git
 
