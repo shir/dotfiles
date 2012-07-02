@@ -56,3 +56,6 @@ if [ -d ~/.rvm ]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 fi
 
+# Bundler exec
+BUNDLER_EXEC="$(dirname $(readlink ${BASH_SOURCE[0]}))/bundler-exec/bundler-exec.sh"
+[ -f "${BUNDLER_EXEC}" ] && source "${BUNDLER_EXEC}"

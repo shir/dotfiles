@@ -1,0 +1,3 @@
+[submodule "bundler-exec"]
+	path = bundler-exec
+	url = https://github.com/gma/bundler-exec.git
