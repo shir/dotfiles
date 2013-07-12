@@ -1,6 +1,3 @@
-# Homebrew
-export PATH="${PATH}:/usr/local/sbin"
-
 # Use bash-completion
 # You can install it with brew
 if [ -f `brew --prefix`/etc/bash_completion ]; then
