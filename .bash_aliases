@@ -17,6 +17,8 @@ alias gdc="git diff --cached"
 alias glg="git log"
 alias gb="git branch"
 alias gco="git checkout"
+alias gf="git fetch"
+alias gfp="git fetch --prune"
 
 __git_complete ga  _git_add
 __git_complete gl  _git_pull
@@ -28,3 +30,5 @@ __git_complete gdc _git_diff
 __git_complete gl  _git_log
 __git_complete gb  _git_branch
 __git_complete gco _git_checkout
+__git_complete gf  _git_fetch
+__git_complete gfp _git_fetch
