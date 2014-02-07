@@ -1,0 +1,3 @@
+--skip-test-unit
+--javascript=jquery
+--database=postgresql

@@ -5,7 +5,7 @@ GIT_URL="git@github.com:shir/dotfiles.git"
 DOT_DIR=".dotfiles"
 LN_BIN="ln -si"
 
-DOT_FILES=".bashrc .bash_profile .bash_aliases .screenrc .gemrc .caprc"
+DOT_FILES=".bashrc .bash_profile .bash_aliases .screenrc .gemrc .caprc .railsrc"
 
 cd ${HOME}
 ${GIT_BIN} clone ${GIT_URL} ${DOT_DIR}

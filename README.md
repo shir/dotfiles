@@ -13,6 +13,7 @@ It has configuration for:
 * Screen utility
 * Gem
 * Capistrano
+* `rails new` config
 
 Installation
 ============
