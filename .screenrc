@@ -1,3 +1,5 @@
+# Make xterm scrolling work properly with screen.
+termcapinfo xterm-256color|xterm-color|xterm|xterms|xs|rxvt ti@:te@
 hardstatus alwayslastline
 hardstatus string '%{= kB}%-Lw%{+r}%50> %n%f* %t%{= kB}%+Lw%< %{= kB}%-= %{-}'
 startup_message off
