@@ -5,7 +5,7 @@ GIT_URL="git@github.com:shir/dotfiles.git"
 DOT_DIR=".dotfiles"
 LN_BIN="ln -si"
 
-DOT_FILES=".bashrc .bash_profile .bash_aliases .screenrc .gemrc .caprc .railsrc"
+DOT_FILES=".bashrc .bash_profile .bash_aliases .screenrc .gemrc .caprc .railsrc .gitconfig .gitignore"
 
 cd ${HOME}
 ${GIT_BIN} clone ${GIT_URL} ${DOT_DIR}
@@ -17,3 +17,4 @@ cd ${HOME}
 for dot_file in $DOT_FILES; do
   ${LN_BIN} "${DOT_DIR}/${dot_file}"
 done
+

@@ -1,0 +1,5 @@
+*.sublime-*
+.DS_Store
+/log
+.ruby-gemset
+

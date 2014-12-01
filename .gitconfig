@@ -1,0 +1,5 @@
+[user]
+	email = shaynurov@gmail.com
+	name = Ildar Shaynurov
+[core]
+	excludesfile = /Users/shir/.gitignore
