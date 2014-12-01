@@ -1,5 +1,6 @@
 *.sublime-*
 .DS_Store
 /log
-.ruby-gemset
+/.ruby-gemset
+/.powenv
 
