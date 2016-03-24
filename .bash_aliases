@@ -19,6 +19,7 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gf="git fetch"
 alias gfp="git fetch --prune"
+alias glog="git log --graph --abbrev-commit --decorate --date=format:'%F %R' --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(white)%s%C(reset) - %C(dim white)%an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
 __git_complete ga  _git_add
 __git_complete gl  _git_pull
