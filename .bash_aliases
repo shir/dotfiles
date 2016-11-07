@@ -4,6 +4,12 @@ alias ll="ls -l"
 alias g="grep --color=auto -n"
 alias gr="g -R"
 
+# Screen
+
+alias ss="screen -S ${PWD##*/}"
+alias sr="screen -R ${PWD##*/}"
+alias sls="screen -ls"
+
 # Git
 
 alias gst="git status"
