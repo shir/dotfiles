@@ -4,4 +4,6 @@
 /.ruby-gemset
 /.powenv
 /.powrc
+.vscode
+/.frontier.json
 
