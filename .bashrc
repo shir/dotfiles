@@ -5,7 +5,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 if [ -f ~/.bash_aliases ]; then
- source ~/.bash_aliases
+  source ~/.bash_aliases
 fi
 
 color_is_on=
@@ -47,16 +47,9 @@ if [ -d ~/.bin ]; then
   export PATH="${PATH}:${HOME}/.bin"
 fi
 
-# RVM
-if [ -d ~/.rvm ]; then
-  export PATH="${PATH}:${HOME}/.rvm/bin" # Add RVM to PATH for scripting
-  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-fi
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash
 
 # Bundler exec
 BUNDLER_EXEC="${HOME}/$(dirname $(readlink ${BASH_SOURCE[0]}))/bundler-exec/bundler-exec.sh"
 [ -f "${BUNDLER_EXEC}" ] && source "${BUNDLER_EXEC}"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
